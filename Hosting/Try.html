@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS F364 - Design and Analysis of Algorithm</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 120px 20px;
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      animation: fadeInSlideDown 2s ease;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      margin-bottom: 15px;
+      text-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 0, 255, 0.3);
+    }
+
+    p.subtitle {
+      font-size: 1.8rem;
+      color: #d0d0d0;
+      margin-bottom: 40px;
+      animation: fadeIn 2.5s ease;
+    }
+
+    .github-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      box-shadow: 0 14px 40px rgba(255, 65, 108, 0.4);
+    }
+
+    .github-btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      box-shadow: 0 25px 60px rgba(255, 65, 108, 0.6);
+    }
+
+    .btn-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      padding: 60px 40px;
+      animation: fadeIn 3s ease;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      padding: 28px 35px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      box-shadow: 0 14px 40px rgba(79, 172, 254, 0.4);
+      transform: perspective(600px) rotateX(0deg);
+    }
+
+    .btn:hover {
+      transform: scale(1.1) perspective(600px) rotateX(5deg);
+      background: linear-gradient(135deg, #00f2fe, #4facfe);
+      box-shadow: 0 25px 60px rgba(79, 172, 254, 0.6);
+    }
+
+    footer {
+      margin-top: 80px;
+      color: #aaa;
+      font-size: 1rem;
+      padding: 40px;
+      background: linear-gradient(135deg, #0f2027, #203a43);
+      border-top: 1px solid #444;
+      animation: fadeIn 4s ease;
+    }
+
+    @keyframes fadeInSlideDown {
+      from { opacity: 0; transform: translateY(-80px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CS F364 - Design and Analysis of Algorithm</h1>
+    <p class="subtitle">Implementation of Maximal Clique Enumeration Algorithms</p>
+    <a href="https://github.com/Krish080403/DAA-Assignment-1" class="github-btn" target="_blank">View on GitHub</a>
+  </header>
+
+  <div class="btn-container">
+    <a href="algorithm1.html" class="btn">Algorithm 1: Exact Algorithm</a>
+    <a href="algorithm4.html" class="btn">Algorithm 4</a>
+  </div>
+
+  <footer>
+    <p>Created by Krish | Ananya | Mandar | Sudarsan | Vinay</p>
+  </footer>
+</body>
+</html>
