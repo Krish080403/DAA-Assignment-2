@@ -5,6 +5,35 @@
 
 ---
 
+👥 **Names and Contributions:**
+
+- **Krish Mantri (2021B3A71732H)**  
+  - Implementation of Algorithm 1 (Exact Algorithm)  
+  - Webpage creation  
+  - Readme file creation
+
+- **Ananya Jalan (2021B3A72963H)**  
+  - Implementation of Algorithm 1 (Exact Algorithm)  
+  - Webpage creation  
+  - Readme file creation
+
+- **Vinay Naidu Vanka (2021B3A71026H)**  
+  - Implementation of Algorithm 4 (CoreExact Algorithm)  
+  - Report making  
+  - Webpage creation
+
+- **Mandar Naphade (2021B3A72734H)**  
+  - Implementation of Algorithm 4 (CoreExact Algorithm)  
+  - Report making  
+  - Webpage creation
+
+- **Sudarsan Mohanchander (2021B3A70558H)**  
+  - Implementation of Algorithm 4 (CoreExact Algorithm)  
+  - Report making  
+  - Readme file creation
+
+---
+
 ## About the Project
 
 This project implements algorithms for the **Densest Subgraph Discovery (DSD)** problem from the research paper:  
@@ -19,8 +48,6 @@ In this assignment, we specifically:
 ---
 
 ## Algorithms Implemented
-
-We implemented two main algorithms from the paper:
 
 ### 1. Algorithm 1: Exact Algorithm (From Section 4.1)
 
@@ -86,11 +113,16 @@ The code is hosted as a webpage at:
 🔗 [DAA Assignment 2 Webpage](https://krish080403.github.io/DAA-Assignment-2/Hosting/main.html)
 
 **Instructions:**
-1. Download the datasets on which you want to run the algorithm
+1. Download the datasets on which you want to run the algorithm.
 2. Choose which algorithm you want to run:
    - **Exact Algorithm** for precise but slower computation.
    - **CoreExact Algorithm** for faster results using cores.
-3.g++ <algorithm.cpp> -o output    |    ./ouput <dataset_name>   
+3. Compile and run:
+   ```
+   g++ <algorithm.cpp> -o output
+   ./output <dataset_name>
+   ```
+
 ---
 
 ## References
@@ -99,4 +131,3 @@ The code is hosted as a webpage at:
 Yixiang Fang, Kaiqiang Yu, Reynold Cheng, Laks V.S. Lakshmanan, Xuemin Lin.  
 *"Efficient Algorithms for Densest Subgraph Discovery."*  
 PVLDB 12(11): 1719-1732, 2019. [DOI Link](https://doi.org/10.14778/3342263.3342645)
-
