@@ -86,18 +86,12 @@ The code is hosted as a webpage at:
 🔗 [DAA Assignment 2 Webpage](https://krish080403.github.io/DAA-Assignment-2/Hosting/main.html)
 
 **Instructions:**
-1. Open the starting webpage.
-2. Upload a graph file in the specified format (if needed).
-3. Choose which algorithm you want to run:
+1. Download the datasets on which you want to run the algorithm
+2. Choose which algorithm you want to run:
    - **Exact Algorithm** for precise but slower computation.
    - **CoreExact Algorithm** for faster results using cores.
-4. The webpage will visualize the densest subgraph found and display details such as:
-   - Number of nodes and edges
-   - Computed density
-   - Execution time.
-
-The project is fully client-side, meaning no server is involved — everything runs directly in your browser.
-
+3. g++ <algorithm.cpp> <datasetname>
+   
 ---
 
 ## References
