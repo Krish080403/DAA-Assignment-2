@@ -25,7 +25,7 @@ We implemented two main algorithms from the paper:
 ### 1. Algorithm 1: Exact Algorithm (From Section 4.1)
 
 **Objective:**  
-Find the exact densest subgraph with respect to h-clique density (triangle density in our case, h=3).
+Find the exact densest subgraph with respect to h-clique density (In our case, h=2).
 
 **Method:**  
 - Constructs a **flow network** based on the input graph and performs **binary search** over possible density values.
@@ -71,9 +71,9 @@ Much faster than Algorithm 1 in practice — core decomposition is \( O\left( n 
 
 ## Value of **h**
 
-In this project, we set the value of **h = 3**, meaning:
+In this project, we set the value of **h = 2**, meaning:
 - We are finding the **densest subgraph based on triangle participation**.
-- A triangle (3-clique) is considered a basic building block of density rather than just edges.
+- A triangle (2-clique) is considered a basic building block of density rather than just edges.
 
 The algorithm computes the number of triangles each node participates in and uses that for core decomposition and densest subgraph discovery.
 
