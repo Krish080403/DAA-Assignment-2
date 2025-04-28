@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Algorithm 4 Core Exact</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #000428, #004e92);
+    }
+    h1, h2 {
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgba(255,255,255,0.1);
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background: rgba(0,0,0,0.3);
+    }
+    a.github-link {
+      display: block;
+      text-align: center;
+      margin: 30px 0;
+      color: #00f2fe;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000428;
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Algorithm 4 Core Exact</h1>
+  </header>
+
+  <section>
+    <h2>Description</h2>
+    <p>
+      The CoreExact algorithm is an exact method designed to compute the Core Density Subgraph (CDS) 
+      for a given graph <strong>G(V, E)</strong> with respect to a weight function <strong>Ψ(V<sub>Ψ</sub>, E<sub>Ψ</sub>)</strong>. 
+      It aims to find a subset of vertices and edges that maximizes a density function based on both the graph structure 
+      and the weight criteria.
+    </p>
+    <p>
+      The algorithm works as follows:
+      <ul>
+        <li>Perform a preliminary decomposition of the input graph to simplify the search space.</li>
+        <li>Identify a (k', Ψ')-core subgraph using pruning techniques to narrow down potential candidates.</li>
+        <li>Initialize sets and parameters to manage vertex subsets and track the maximum density achieved so far.</li>
+        <li>Iteratively process each connected component of the (k', Ψ')-core:
+          <ul>
+            <li>For each component with sufficient weight, build a flow network and compute a minimum s-t cut.</li>
+            <li>If the resulting subset <strong>S</strong> is non-empty, enter a refinement loop to further maximize density.</li>
+            <li>Continuously update the parameter <strong>u</strong> and recompute minimum cuts to explore denser subgraphs.</li>
+            <li>If a better density is found, update the candidate subgraph accordingly.</li>
+          </ul>
+        </li>
+        <li>Finally, compare the obtained density with the current best and update the final output if improved.</li>
+      </ul>
+    </p>
+    <p>
+      The algorithm intelligently combines core decomposition, flow-based cuts, and iterative refinement 
+      to guarantee an exact and optimal solution. Although computationally intensive for large graphs, 
+      it is highly effective for medium-sized graphs where exactness is required.
+    </p>
+    <p>
+      CoreExact also leverages pruning and intermediate checks to reduce redundant computations, 
+      making it significantly faster than naïve enumeration-based exact methods.
+    </p>
+  </section>
+  
+
+  <a class="github-link"
+     href="https://github.com/Krish080403/DAA-Assignment-2/blob/main/core_exact.cpp"
+     target="_blank">
+    View Algorithm 4 Code on GitHub
+  </a>
+
+  <section>
+    <h2>Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Dataset</th>
+          <th>h=2</th>
+          <th>h=3</th>
+          <th>h=4</th>
+          <th>h=5</th>
+          <th>h=6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dataset 1</td><td>Density: ___<br/>Total Nodes: ___</td><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+        <tr><td>Dataset 2</td><td>Density: ___<br/>Total Nodes: ___</td><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+        <tr><td>Dataset 3</td><td>Density: ___<br/>Total Nodes: ___</td><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+        <tr><td>Dataset 4</td><td>Density: ___<br/>Total Nodes: ___</td><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+        <tr><td>Dataset 5</td><td>Density: ___<br/>Total Nodes: ___</td><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    Created by Krish | Ananya | Mandar | Sudarsan | Vinay
+  </footer>
+
+</body>
+</html>

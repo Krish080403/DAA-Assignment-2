@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Algorithm 1 – Exact Algorithm</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #000428, #004e92);
+    }
+    h1, h2 {
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgba(255,255,255,0.1);
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background: rgba(0,0,0,0.3);
+    }
+    a.github-link {
+      display: block;
+      text-align: center;
+      margin: 30px 0;
+      color: #00f2fe;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000428;
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Algorithm 1: Exact Algorithm</h1>
+  </header>
+
+  <section>
+    <h2>Description</h2>
+    <p>
+      The Exact Algorithm is a brute-force approach designed to find the densest subgraph 
+      within a given graph for a specified number of nodes, denoted by <strong>h</strong>. 
+      This method systematically explores all possible subsets of size <strong>h</strong> 
+      from the vertex set and computes the density for each subset. The subset with the highest 
+      density is selected as the output.
+    </p>
+    <p>
+      The algorithm works as follows:
+      <ul>
+        <li>Enumerate all possible combinations of <strong>h</strong> vertices from the graph.</li>
+        <li>For each subset, calculate the number of edges within the induced subgraph.</li>
+        <li>Compute the density as the ratio of the number of edges to the maximum possible edges for <strong>h</strong> vertices.</li>
+        <li>Track and update the subset with the maximum density found.</li>
+      </ul>
+    </p>
+    <p>
+      Due to its exhaustive search nature, the Exact Algorithm guarantees the optimal solution. 
+      However, its time complexity is <strong>O(n<sup>h</sup>)</strong> where <strong>n</strong> 
+      is the total number of vertices in the graph. This makes it impractical for large graphs or large values of <strong>h</strong>, 
+      but it performs well for small datasets where precision is crucial.
+    </p>
+    <p>
+      This algorithm is particularly useful as a benchmark to evaluate the performance and accuracy 
+      of heuristic or approximation algorithms for the densest subgraph problem.
+    </p>
+  </section>
+  
+
+  <a class="github-link"
+     href="https://github.com/Krish080403/DAA-Assignment-2/blob/main/exact.cpp"
+     target="_blank">
+    View Algorithm 1 Code on GitHub
+  </a>
+
+  <section>
+    <h2>Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Dataset</th>
+          <th>h=2</th>
+          <th>h=3</th>
+          <th>h=4</th>
+          <th>h=5</th>
+          <th>h=6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Dataset 1</td><td>Density: ___ <br/>Total Nodes: ___</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+        <tr><td>Dataset 2</td><td>Density: ___<br/>Total Nodes: ___</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+        <tr><td>Dataset 3</td><td>Density: ___<br/>Total Nodes: ___</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+        <tr><td>Dataset 4</td><td>Density: ___<br/>Total Nodes: ___</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+        <tr><td>Dataset 5</td><td>Density: ___<br/>Total Nodes: ___</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    Created by Krish | Ananya | Mandar | Sudarsan | Vinay
+  </footer>
+
+</body>
+</html>
