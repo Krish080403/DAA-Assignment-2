@@ -90,8 +90,9 @@ The code is hosted as a webpage at:
 2. Choose which algorithm you want to run:
    - **Exact Algorithm** for precise but slower computation.
    - **CoreExact Algorithm** for faster results using cores.
-3. g++ <algorithm.cpp> <datasetname>
-   
+3.
+g++ <algorithm.cpp> -o output
+./ouput <dataset_name>   
 ---
 
 ## References
