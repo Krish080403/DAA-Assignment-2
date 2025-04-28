@@ -70,15 +70,12 @@
       from the vertex set and computes the density for each subset. The subset with the highest 
       density is selected as the output.
     </p>
-    <p>
-      The algorithm works as follows:
-      <ul>
-        <li>Enumerate all possible combinations of <strong>h</strong> vertices from the graph.</li>
-        <li>For each subset, calculate the number of edges within the induced subgraph.</li>
-        <li>Compute the density as the ratio of the number of edges to the maximum possible edges for <strong>h</strong> vertices.</li>
-        <li>Track and update the subset with the maximum density found.</li>
-      </ul>
-    </p>
+    <ul>
+      <li>Enumerate all possible combinations of <strong>h</strong> vertices from the graph.</li>
+      <li>For each subset, calculate the number of edges within the induced subgraph.</li>
+      <li>Compute the density as the ratio of the number of edges to the maximum possible edges for <strong>h</strong> vertices.</li>
+      <li>Track and update the subset with the maximum density found.</li>
+    </ul>
     <p>
       Due to its exhaustive search nature, the Exact Algorithm guarantees the optimal solution. 
       However, its time complexity is <strong>O(n<sup>h</sup>)</strong> where <strong>n</strong> 
@@ -90,7 +87,6 @@
       of heuristic or approximation algorithms for the densest subgraph problem.
     </p>
   </section>
-  
 
   <a class="github-link"
      href="https://github.com/Krish080403/DAA-Assignment-2/blob/main/exact.cpp"
@@ -99,20 +95,41 @@
   </a>
 
   <section>
-    <h2>Results</h2>
+    <h2>Results (for h = 2)</h2>
     <table>
       <thead>
         <tr>
           <th>Dataset</th>
-          <th>h=2</th>
+          <th>Density</th>
+          <th>Total Nodes</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>CA-HepTh</td><td>Density:15.5 <br/>Total Nodes: 32</td><td>
-        <tr><td>Yeast_proxy</td><td>Density:3.12<br/>Total Nodes:39</td><td>
-        <tr><td>as-caida20071105</td><td>Density:17.534091<br/>Total Nodes:88</td><td>
-        <tr><td>netscience</td><td>Density:9.5 <br/>Total Nodes: 20</td><td>
-        <tr><td>as19991210</td><td>Density:8.193548<br/>Total Nodes:31</td><td>
+        <tr>
+          <td>CA-HepTh</td>
+          <td>15.5</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td>Yeast_proxy</td>
+          <td>3.12</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>as-caida20071105</td>
+          <td>17.534091</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>netscience</td>
+          <td>9.5</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>as19991210</td>
+          <td>8.193548</td>
+          <td>31</td>
+        </tr>
       </tbody>
     </table>
   </section>
